@@ -19,6 +19,45 @@ body {
    /* background-color: antiquewhite;*/
 }
 /******************************************/
+/***********  Formulario  *****************/
+/******************************************/
+.FormularioTP4 {
+    display: block;
+    max-width: 100vw;
+    width: 100%;
+    margin: 3%;
+}
+.Formulario {
+    padding: 3%;
+    
+}
+/* which 50% para poder colocar dos input en la misma linea*/
+.cajaname {
+    width: 50%;
+    margin: 0;
+}
+    .cajalastname {
+        width: 50%;
+        margin: 0;
+    }
+    .cajaseleccion {
+        padding: 20px;
+    }
+    /*coloco flex-direccion = row para que queden dos filas*/
+    .nombreape {
+        flex-direction: row;
+        display: flex;
+    }
+/* con float hago que las cajas se coloquen a left, y se colocan una despues de la otra*/    
+.columna-1 {
+    width: 50%;   
+    float: left;
+}
+.columna-2 {
+    width: 50%;
+    float: left;
+}
+/******************************************/
 /***********  listas - RULES***************/
 /******************************************/
 @font-face {
@@ -156,8 +195,7 @@ ul  li {
             background-image: url(../images/hockey1.jpg); /*agregar los .. */
             width: 33%;
             height: 150px;
-            float: left;
-            
+            float: left;   
         }
         .imgbaner2 {
             width: 33%;
