@@ -1,0 +1,302 @@
+/*seteo de pagina*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    max-width: 100vw;
+   /* min-height: 100vh;*/
+}
+/*estilo del contenedor principal*/
+/* margin: 0px auto; centra la page*/
+.contenedor {
+    width: 100%;
+    padding: 0;
+    margin: 0px auto;
+    font-family: cursive; /*toda la letra del contenedor en cursiva*/
+   /* background-color: antiquewhite;*/
+}
+/******************************************/
+/***********  listas - RULES***************/
+/******************************************/
+@font-face {
+    font-family: Roboto;
+    src: url(/font/Roboto-Medium.ttf);/*cargo una fuente parecida el texto*/
+}
+.rules {
+    font-family: Roboto; 
+    width: 100%;
+    padding: 10%;
+}
+.presentacionreglas {
+    /*height: 10%;*/
+    text-align: center; /*alinio reglas al centro*/
+}
+.titulito {
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    margin-top: 2%;
+}
+/*sangria de el texto*/
+.sangria {
+    text-indent: 2em;
+    margin-bottom: 2%;
+}
+/*lista con numero y los coloca dentro deltecto(outside por defecto)*/
+.listanumerada {
+    list-style: decimal inside; 
+    margin-top: 2.5%;
+    /* border: 1px solid black;*/
+}
+/* paddin para los elementos de la lista*/
+ol li {
+    padding-bottom: 2%;
+}
+/*uso la cascada para sacar el padding ya que esta lista no lleva*/
+ul  li {
+    padding-bottom: 0;
+}
+.listaalfa {
+    list-style: lower-latin inside;
+}
+/*le coloco a esta lista el circulo vacio*/
+.listacirculito {
+    list-style: circle inside;
+    padding-left: 10%;
+}
+.presentacionreglas {
+   /* border: 1px solid black;*/
+    margin-bottom: 5%;
+}
+.sportsmanship {
+    /* border: 1px solid black;*/
+    padding-bottom: 2%;
+}
+/*.allplay {
+    margin-top: 2.5%;
+    border: 1px solid black;
+}*/
+/****************************************/
+/*********  tablas - GAMESinformation****/
+/****************************************/
+.tablainformacion {
+    width: 80%;
+    margin: 5%;
+    border-collapse: collapse;
+}
+.encabezadoMigthy {
+    font-size: xx-large;
+}
+/*.hora {
+    text-align: center;
+}*/
+.col1 {
+    width: 20%;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+.col2 {
+    padding-bottom: 1%;
+    padding-top: 3%;
+    width: 20%;
+    text-align: left;
+}
+.col3 {
+    padding-bottom: 1%;
+    padding-top: 3%;
+    width: 20%;
+    text-align: left;
+}
+.col4 {
+    padding-bottom: 1%;
+    padding-top: 3%;
+    width: 10%;
+    text-align: left;
+}
+/*table,td,th,tr {
+    border: 1px solid black;
+    margin: 0px auto;
+}*/
+.fecha {
+    text-align: center;
+}
+.facility {
+    padding-top: 5%;
+}
+.please {
+    padding-top: 5%;
+}
+.email {
+    text-align: right;
+}
+/***********************************/
+/***********************************/
+/***********************************/
+    /*estilo del encabezado*/
+    /* en este caso dentro del contenedor van
+    dos cajas 
+    1 - titulo principal / con banner con fotos
+    2 - navegacion
+    */
+    header {
+    /* background-color: pink; */
+        margin: 0px auto;
+        width: 99%;
+       /* height: 20%;/*
+       /* position: sticky; deja posicionado el header en la cabexera de la paguina*/
+        top: 10px;
+    }
+        .imagen1 {
+            display: none;
+        }
+        .imgbaner1 {
+            background-size: contain;
+            background-image: url(../images/hockey1.jpg); /*agregar los .. */
+            width: 33%;
+            height: 150px;
+            float: left;
+            
+        }
+        .imgbaner2 {
+            width: 33%;
+            height: 150px;
+            background-size: contain;
+            background-image: url(../images/hockey2.jpg);
+            float: left;
+        }
+        .imgbaner3 {
+            width: 33%;
+            height: 150px;
+            background-size: contain;
+            background-image: url(../images/hockey3.jpg);
+            float: left;
+        }
+        /* formato las cajas "a" que estan dentro del nav"*/
+        header a {
+            color: rgb(201, 235, 11); /*color del texto */
+            text-decoration: none; /*saco el subrayado*/
+            background-color: rgb(67, 113, 237);
+            border: 1px solid black;
+            margin: 3px;
+            padding: 3px;
+            position: relative; /*se mueve esta relativa de las paredes de nav*/
+            bottom: 10px;
+            left: 50px;
+            box-shadow: 10px 5px 5px black; /* sombra en la cajas de "a" en el nav*/
+        }
+        /*cambia de color el boton cuando pasa el mouse*/ 
+        header a:hover {
+            background-color: rgb(32, 224, 238);
+        }
+        .activo {
+            background-color: rgb(86, 194, 103);
+        }
+        .activo:hover { 
+            background-color: #14d364;
+        }
+        /*La propiedad CSS float ubica un elemento al lado izquierdo
+        o derecho de su contenedor, permitiendo a los elementos de 
+        texto y en línea aparecer a su costado. El elemento es removido
+        del normal flujo de la página, aunque aún sigue siendo parte 
+        del flujo (a diferencia del posicionamiento absoluto).*/
+        /*uso la propiedad float para que se coloquen uno al lado del otro*/
+        .Titulo {
+            /* background-color: blue;*/
+            text-shadow: 1px 1px 2px yellow; /*sombra en la letra del banner*/
+            color: rgb(0, 3, 3);
+            width: 99%;
+            height: 20%;
+            float: left;
+            font-size: 43px;/*tamaño de letra dentro de Titulo*/
+            position: absolute;
+            /*top: 40px;
+            left: 150px;*/
+        }
+        nav {
+            /* background-color: rgb(184, 212, 42);*/
+            width: 99%;
+            height: 50px;
+            float: left;
+        }
+    /* formato titulo 2*/    
+    .Titulo2 {
+        color: rgb(219, 44, 44);
+        background-color: rgb(223, 235, 63);
+        width: 99%;
+    /* height: 38px; */
+        border: 2px solid black; /*borde de titulo 2 */
+        float: left;
+        display: block;
+        text-align: center;
+        margin-bottom: 38px; /*doy margen inferior para separar 
+        la caja section*/
+    }
+    section {
+        display: block;
+        width: 99%;
+        height: 80%;
+    }
+        .logo1 {
+        /* background-color: rgb(226, 37, 176);*/
+            width: 20%;
+            height: 80%;
+            float: left;
+        }
+        .logo {
+            display: none;
+        }
+        .logop {
+            margin: 10px;
+            width: 80px;
+            height: 100px;
+        /* valores predeterminados transform */
+        position: relative; /*para que funcione la animacion*/
+        transition-duration: 2s ;
+        transition-timing-function: ease-in;
+        /* valores predeterminados animaciones */
+        animation-name: caja;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        }
+        .logop:hover {
+            transform: scale(5); /* si paso el mouse sobre el loqo lo agrando*/
+        }
+        @keyframes caja{
+            0%{
+                right:-50px;
+                transform: scale(2) rotate(30deg);/* agranda y rota la imagen en este ciclo*/
+            }
+            33%{
+                right:42px;
+            }
+            66%{
+                right:-50px;
+            }
+            100%{
+                right:42px;
+            }
+        }
+        .art1 {
+        /* background-color: rgb(35, 195, 220);*/
+            width: 80%;
+            height: 25%;
+            float: left;
+        }
+        .art2{
+        /* background-color: rgb(58, 166, 234);*/
+            width: 80%;
+            height: 25%;
+            float: left;
+        }
+        .art3 {
+            /*background-color: rgb(18, 139, 183);*/
+            width: 80%;
+            height: 25%;
+            float: left;
+        }
+            /* le doy sangria al texto*/
+            .texto {
+                        text-indent: 1em; 
+                    }
