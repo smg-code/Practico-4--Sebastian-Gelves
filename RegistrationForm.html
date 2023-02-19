@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./styles/stylepersonal.css">  
 </head>
 <body class="FormularioTP4">
-    <div class="contenedor">
+    <!--Encabezado -->
+    <div class="contenedor"> 
         <!--Encabezado -->
         <header> 
             <div class="imgbaner1"></div>
@@ -32,16 +33,16 @@
             </div>
         </header>
     </div>
+    <!-- primera caja - Datos jugador-->
     <section class="Formulario">
         <h1>Registration Form</h1>
-    <!-- primera caja-->    
-        <div class="nombreape">
+        <div class="EntradaDatos">
         <!-- primera linea-->
-            <div class="input-group mb-3 cajaname">
-                <span class="input-group-text" id="inputGroup-sizing-default">Player´s First Name</span>
+            <div class="input-group mb-3 EntradaDatosLadoLeft">
+                <span class="input-group-text" id="inputGroup-sizing-default">Player's First Name</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <div class="input-group mb-3 cajalastname">
+            <div class="input-group mb-3 EntradaDatosLadoRigth">
                 <span class="input-group-text" id="inputGroup-sizing-default">Last Name</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
@@ -52,23 +53,23 @@
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>
          <!-- tercera linea-->
-        <div class="nombreape">
-            <div class="input-group mb-3 cajaname">
+        <div class="EntradaDatos">
+            <div class="input-group mb-3 EntradaDatosLadoLeft">
                 <span class="input-group-text" id="inputGroup-sizing-default">City</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <div class="input-group mb-3 cajalastname">
+            <div class="input-group mb-3 EntradaDatosLadoRigth">
                 <span class="input-group-text" id="inputGroup-sizing-default">Zip Code</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
         </div> 
          <!-- cuarta linea-->
-        <div class="nombreape">
-            <div class="input-group mb-3 cajaname">
+        <div class="EntradaDatos">
+            <div class="input-group mb-3 EntradaDatosLadoLeft">
                 <span class="input-group-text" id="inputGroup-sizing-default">Bith Date(mm/dd/yyyy)</span>
                 <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <div class="cajaseleccion">
+            <div class="CajaSeleccionGenero">
             <label for="form-check form-check-inline form-check-reverse">Gender: </label>
             <div class="form-check form-check-inline form-check-reverse">   
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="reverseCheck1">
@@ -81,8 +82,8 @@
             </div>
         </div> 
          <!-- quinta linea-->
-        <div class="cajaseleccion">
-            <label for="form-check form-check-inline">Grade: </label>
+        <div class="CajaSeleccionGenero">
+            <label for="form-check form-check-inline">Grade:</label>
             <div class="form-check form-check-inline">   
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="reverseCheck1">
             <label class="form-check-label" for="reverseCheck1">Pre-School</label>
@@ -108,9 +109,10 @@
                 <label class="form-check-label" for="flexRadioDefault6">5th</label>
             </div>
         </div>
-      
-    <!-- segunda caja-->
-    <div class="cajaseleccion">
+    </section>     
+    <section> 
+    <!-- segunda caja--seleccionar el school mas cercano -->
+    <div class="CajaSeleccionElementos">
         <h3>Which elementary school do you live near?</h3>
         <h4>Closest School</h4>
         <div class="columna-1">
@@ -142,8 +144,10 @@
             </div>
         </div>
     </div>
+    </section>
+    <section>
     <!-- tercera caja-->
-    <div class="cajaseleccion">
+    <div class="CajaSeleccionElementos">
         <h3>What position(s) do you normally play? (check all that apply)</h3>
         
         <div class="columna-1">
@@ -167,8 +171,10 @@
             </div>
         </div>
     </div>
+    </section>
+    <section>
     <!-- cuarta caja-->
-    <div class="cajaseleccion">
+    <div class="CajaSeleccionElementos">
         <h3>Uniform Size</h3>
         <div class="columna-1">
             <div class="form-check">   
@@ -204,19 +210,21 @@
             </div>
         </div>
     </div>
+    </section>
+    <section>
     <!-- quinta caja-->
-    <div>
+    <div class="CajaAutorizacion">
         <h4>Permission to Play</h4>
         <p>
             I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation
             
             By signing below, I herebyagree and authorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
         </p>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 InputFirma">
             <span class="input-group-text" id="inputGroup-sizing-default">Parent/GuardianSignature</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 InputFirma">
             <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
             <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>

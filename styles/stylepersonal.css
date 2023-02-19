@@ -28,26 +28,48 @@ body {
     margin: 3%;
 }
 .Formulario {
-    padding: 3%;
-    
+    padding: 3%; 
 }
-/* which 50% para poder colocar dos input en la misma linea*/
-.cajaname {
-    width: 50%;
-    margin: 0;
+.Formulario h1 {
+    text-align: center;
 }
-    .cajalastname {
-        width: 50%;
-        margin: 0;
-    }
-    .cajaseleccion {
-        padding: 20px;
-    }
-    /*coloco flex-direccion = row para que queden dos filas*/
-    .nombreape {
+/*coloco flex-direccion = row para que queden dos filas*/
+    .EntradaDatos {
         flex-direction: row;
         display: flex;
     }
+    /* which 50% para poder colocar dos input en la misma linea*/
+    .EntradaDatosLadoLeft{
+    width: 50%;
+    margin: 0;
+    }
+    .EntradaDatosLadoRigth {
+        width: 50%;
+        margin: 0;
+    }
+    /* separo datos genero del la entrada de fecha nacimiento*/
+    .CajaSeleccionGenero {
+        padding-left: 2%;
+        display: flex;
+        align-items: center;
+    }
+    label { 
+        margin-right: 4px;
+    }
+.CajaSeleccionElementos {
+    padding: 3%;
+    display: block;
+    margin-bottom: 50px;
+}
+.CajaAutorizacion {
+    padding: 3%;
+    display: block;
+    margin-top: 100px;
+}
+.InputFirma {
+    width: 50%; 
+}
+        
 /* con float hago que las cajas se coloquen a left, y se colocan una despues de la otra*/    
 .columna-1 {
     width: 50%;   
