@@ -221,6 +221,11 @@ ul  li {
 /****************************************/
 /*********  tablas - GAMESinformation****/
 /****************************************/
+.mapas {
+    width: 80%;
+    margin: 5%;
+    float: left;
+}
 .tablainformacion {
     width: 80%;
     margin: 5%;
