@@ -79,6 +79,85 @@ body {
     width: 50%;
     float: left;
 }
+    /**************************************************/
+    /***********Responsive page Registro***************/
+    /**************************************************/
+/***********tamaño celular*********/    
+@media (max-width: 375px) { 
+        header a {
+            position: static;
+            display: inline-block;
+            bottom: 0;
+            left: 0;
+        }
+        nav {
+            height: 66px;
+        }
+        .columna-1 {
+            float: none;   
+         }
+        .columna-2 {
+             float: none;           
+        }
+        .EntradaDatos {
+            flex-direction: column;
+        }
+        .EntradaDatosLadoLeft{
+            width: 100%;
+        }
+        .EntradaDatosLadoRigth {
+            width: 100%;
+        }
+        .InputFirma {
+            width: 100%; 
+        }
+        .CajaSeleccionGenero {
+            padding-left: 2%;
+            display: block;
+        }
+}
+/***********660 px******************/
+@media (min-width: 660px) {
+    header a {
+        position: static;
+        display: inline-block;
+        bottom: 0;
+        left: 0;
+    }
+    nav {
+        height: 66px;
+    }
+}
+/******pantalla  800px en adelante ***/
+@media (min-width: 800px) { 
+        .columna-1 {
+            width: 30%;   
+         }
+        .columna-2 {
+             width: 70%;           
+        }
+        .CajaSeleccionElementos {
+            padding: 2%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .CajaSeleccionGenero {
+            padding-left: 2%;
+        }
+        .Formulario {
+            padding: 2%; 
+        }
+}
+/*********pantalla 1200px en adelante**************/
+@media (min-width: 1200px) { 
+    .columna-1 {
+        width: 20%;   
+     }
+    .columna-2 {
+         width: 80%;           
+    }
+}
+
 /******************************************/
 /***********  listas - RULES***************/
 /******************************************/
