@@ -33,188 +33,189 @@
             </div>
         </header>
     </div>
+    <!-- para enviar datos del formulacio a una html: action="./show_data.html" method="get"-->
+    <form action="./show_data.html" method="get">
     <!-- primera caja - Datos jugador-->
-    <form action="./show_data.html" method="get" class="EnvioFormulario">
-    <section class="Formulario EnvioFormulario">
-        <h1>Registration Form</h1>
+    <section class="Formulari">
+        <h1> Registration Form </h1>
         <div class="EntradaDatos">
         <!-- primera linea-->
-            <div class="input-group mb-3 EntradaDatosLadoLeft EnvioFormulario">
-                <span class="input-group-text" id="inputGroup-sizing-default">Player's First Name</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-            <div class="input-group mb-3 EntradaDatosLadoRigth EnvioFormulario">
-                <span class="input-group-text" id="inputGroup-sizing-default">Last Name</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
+            <div class="input-group mb-3 EntradaDatosLadoLeft"><!-- EntradaDatosLadoLeft: nombre player - caja al 50%-->
+                <span class="input-group-text" id="Player-Name">Player's First Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input">
+            </div><!-- son de boostrap: input-group mb-3 -->
+            <div class="input-group mb-3 EntradaDatosLadoRigth">
+                <span class="input-group-text" id="Last-Name">Last Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input">
+            </div><!-- boostrap: type="text"  input-group-text -->
         </div>
          <!-- segunda linea-->   
-        <div class="input-group mb-3 EnvioFormulario">
-            <span class="input-group-text" id="inputGroup-sizing-default">Street Address</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="Street-Address">Street Address</span>
+            <input type="text" class="form-control" aria-label="Sizing example input">
         </div>
          <!-- tercera linea-->
         <div class="EntradaDatos">
-            <div class="input-group mb-3 EntradaDatosLadoLeft EnvioFormulario">
-                <span class="input-group-text" id="inputGroup-sizing-default">City</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <div class="input-group mb-3 EntradaDatosLadoLeft">
+                <span class="input-group-text" id="City">City</span>
+                <input type="text" class="form-control" aria-label="Sizing example input">
             </div>
-            <div class="input-group mb-3 EntradaDatosLadoRigth EnvioFormulario">
-                <span class="input-group-text" id="inputGroup-sizing-default">Zip Code</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <div class="input-group mb-3 EntradaDatosLadoRigth">
+                <span class="input-group-text" id="Zip-Code">Zip Code</span>
+                <input type="text" class="form-control" aria-label="Sizing example input">
             </div>
         </div> 
          <!-- cuarta linea-->
         <div class="EntradaDatos">
-            <div class="input-group mb-3 EntradaDatosLadoLeft EnvioFormulario">
-                <span class="input-group-text" id="inputGroup-sizing-default">Bith Date(mm/dd/yyyy)</span>
-                <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <div class="input-group mb-3 EntradaDatosLadoLeft">
+                <span class="input-group-text" id="Bith-Date">Bith Date(mm/dd/yyyy)</span>
+                <input type="date" class="form-control" aria-label="Sizing example input">
             </div>
-            <div class="CajaSeleccionGenero EnvioFormulario"> <!-- name = Genero -->
-            <label for="form-check form-check-inline form-check-reverse">Gender: </label>
-            <div class="form-check form-check-inline form-check-reverse">   
-            <input class="form-check-input" type="radio" name="Genero" id="reverseCheck1">
-            <label class="form-check-label" for="reverseCheck1">Female</label>
-            </div>
-            <div class="form-check form-check-inline form-check-reverse">
-            <input class="form-check-input" type="radio" name="Genero" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">Male</label>
-            </div>
+            <div class="CajaSeleccionGenero"> <!-- name = Genero -->
+                <label>Gender:</label>
+                <div class="form-check form-check-inline form-check-reverse" id="Genero">   
+                    <input class="form-check-input" type="radio" name="Genero" id="Female">
+                    <label class="form-check-label" for="Female">Female</label>
+                </div>
+                <div class="form-check form-check-inline form-check-reverse">
+                    <input class="form-check-input" type="radio" name="Genero" id="Male" checked>
+                    <label class="form-check-label" for="Male">Male</label>
+                </div>
             </div>
         </div> 
          <!-- quinta linea-->
-        <div class="CajaSeleccionGenero EnvioFormulario">
-            <label for="form-check form-check-inline">Grade:</label>
-            <div class="form-check form-check-inline">   
-            <input class="form-check-input" type="radio" name="Grado" id="reverseCheck1">
-            <label class="form-check-label" for="reverseCheck1">Pre-School</label>
+        <div class="CajaSeleccionGenero"><!-- boostrap: los muestra en linea: form-check-inline -->
+            <label>Grade:</label>
+            <div class="form-check form-check-inline" id="Grade">   <!--boostrap: type="radio" solo una opcion entre varias -->
+            <input class="form-check-input" type="radio" name="Grado" id="Pre-School">
+            <label class="form-check-label" for="Pre-School">Pre-School</label>
             </div>
             <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="Grado" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">1st</label>
+            <input class="form-check-input" type="radio" name="Grado" id="First">
+            <label class="form-check-label" for="First">1st</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Grado" id="flexRadioDefault3" checked>
-                <label class="form-check-label" for="flexRadioDefault3">2nd</label>
+                <input class="form-check-input" type="radio" name="Grado" id="Second">
+                <label class="form-check-label" for="Second">2nd</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Grado" id="flexRadioDefault4" checked>
-                <label class="form-check-label" for="flexRadioDefault4">3rd</label>
+                <input class="form-check-input" type="radio" name="Grado" id="Third">
+                <label class="form-check-label" for="Third">3rd</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Grado" id="flexRadioDefault5" checked>
-                <label class="form-check-label" for="flexRadioDefault5">4th</label>
+                <input class="form-check-input" type="radio" name="Grado" id="Fourth">
+                <label class="form-check-label" for="Fourth">4th</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="Grado" id="flexRadioDefault6" checked>
-                <label class="form-check-label" for="flexRadioDefault6">5th</label>
+                <input class="form-check-input" type="radio" name="Grado" id="Fifth">
+                <label class="form-check-label" for="Fifth">5th</label>
             </div>
         </div>
     </section>     
-    <section class="EnvioFormulario"> 
-    <!-- segunda caja--seleccionar el school mas cercano -->
-    <div class="CajaSeleccionElementos EnvioFormulario">
+    <section> 
+    <!-- segunda caja :seleccionar el school mas cercano -->
+    <div class="CajaSeleccionElementos">
         <h3>Which elementary school do you live near?</h3>
         <h4>Closest School</h4>
         <div class="columna-1">
             <div class="form-check">   
-            <input class="form-check-input" type="radio" name="SchoolLive" id="reverseCheck1">
-            <label class="form-check-label" for="reverseCheck1">AJ Katzenmaier</label>
+            <input class="form-check-input" type="radio" name="SchoolLive" id="AJ_Katzenmaier">
+            <label class="form-check-label" for="AJ_Katzenmaier">AJ Katzenmaier</label>
             </div>
-            <div class="form-check"><!--------------------El checked la deja seleccionada al cargar la pagina-->
-            <input class="form-check-input" type="radio" name="SchoolLive" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">Greenbay</label>
+            <div class="form-check"><!-- El checked la deja seleccionada al cargar la pagina -->
+            <input class="form-check-input" type="radio" name="SchoolLive" id="Greenbay" checked>
+            <label class="form-check-label" for="Greenbay">Greenbay</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="SchoolLive" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">Howard A Yeager</label>
+                <input class="form-check-input" type="radio" name="SchoolLive" id="Howard_A_Yeager">
+                <label class="form-check-label" for="Howard_A_Yeager">Howard A Yeager</label>
             </div>
         </div>
         <div class="columna-2">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="SchoolLive" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">Marjorie P Hart</label>
+                <input class="form-check-input" type="radio" name="SchoolLive" id="Marjorie_P_Hart">
+                <label class="form-check-label" for="Marjorie_P_Hart">Marjorie P Hart</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="SchoolLive" id="flexRadioDefault5">
-                <label class="form-check-label" for="flexRadioDefault5">Nort Elementary</label>
+                <input class="form-check-input" type="radio" name="SchoolLive" id="North_Elementary">
+                <label class="form-check-label" for="North_Elementary">Nort Elementary</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="SchoolLive" id="flexRadioDefault6">
-                <label class="form-check-label" for="flexRadioDefault6">South Elementary</label>
+                <input class="form-check-input" type="radio" name="SchoolLive" id="South_Elementary">
+                <label class="form-check-label" for="South_Elementary">South Elementary</label>
             </div>
         </div>
     </div>
     </section>
-    <section class="EnvioFormulario">
+    <section >
     <!-- tercera caja-->
-    <div class="CajaSeleccionElementos EnvioFormulario">
+    <div class="CajaSeleccionElementos">
         <h3>What position(s) do you normally play? (check all that apply)</h3>
         
         <div class="columna-1">
-            <div class="form-check">   
-            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="reverseCheck1">
-            <label class="form-check-label" for="reverseCheck1">Forward</label>
+            <div class="form-check">   <!--boostrap: type="checkbox" te deja elejir varias opciones -->
+            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="Forward">
+            <label class="form-check-label" for="Forward">Forward</label>
             </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">Defense</label>
+            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="Defense">
+            <label class="form-check-label" for="Defense">Defense</label>
             </div>
         </div>
         <div class="columna-2">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">Midfield</label>
+                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="Midfield">
+                <label class="form-check-label" for="Midfield">Midfield</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault5">
-                <label class="form-check-label" for="flexRadioDefault5">Goalkeeper</label>
+                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="Goalkeeper">
+                <label class="form-check-label" for="Goalkeeper">Goalkeeper</label>
             </div>
         </div>
     </div>
     </section>
-    <section class="EnvioFormulario">
+    <section>
     <!-- cuarta caja-->
-    <div class="CajaSeleccionElementos EnvioFormulario">
+    <div class="CajaSeleccionElementos">
         <h3>Uniform Size</h3>
         <div class="columna-1">
             <div class="form-check">   
-            <input class="form-check-input" type="radio" name="UniformeTalla" id="reverseCheck1">
-            <label class="form-check-label" for="reverseCheck1">Youth Small</label>
+            <input class="form-check-input" type="radio" name="UniformeTalla" id="Youth_Small">
+            <label class="form-check-label" for="Youth_Small">Youth Small</label>
             </div>
-            <div class="form-check"><!--------------------El checked la deja seleccionada al cargar la pagina-->
-            <input class="form-check-input" type="radio" name="UniformeTalla" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">Youth Medium</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="UniformeTalla" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">Youth Large</label>
+            <div class="form-check"><!--  El checked la deja seleccionada al cargar la pagina -->
+            <input class="form-check-input" type="radio" name="UniformeTalla" id="Youth_Medium" checked>
+            <label class="form-check-label" for="Youth_Medium">Youth Medium</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="UniformeTalla" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">Small</label>
+                <input class="form-check-input" type="radio" name="UniformeTalla" id="Young_Large">
+                <label class="form-check-label" for="Young_Large">Youth Large</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="UniformeTalla" id="Small">
+                <label class="form-check-label" for="Small">Small</label>
             </div>
 
         </div>
         <div class="columna-2">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="UniformeTalla" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">Medium</label>
+                <input class="form-check-input" type="radio" name="UniformeTalla" id="Medium">
+                <label class="form-check-label" for="Medium">Medium</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="UniformeTalla" id="flexRadioDefault5">
-                <label class="form-check-label" for="flexRadioDefault5">Large</label>
+                <input class="form-check-input" type="radio" name="UniformeTalla" id="Large">
+                <label class="form-check-label" for="Large">Large</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="UniformeTalla" id="flexRadioDefault6">
-                <label class="form-check-label" for="flexRadioDefault6">Extra-Large</label>
+                <input class="form-check-input" type="radio" name="UniformeTalla" id="Extra-Large">
+                <label class="form-check-label" for="Extra-Large">Extra-Large</label>
             </div>
         </div>
     </div>
     </section>
-    <section class="EnvioFormulario EnvioFormulario">
+    <section>
     <!-- quinta caja-->
-    <div class="CajaAutorizacion EnvioFormulario">
+    <div class="CajaAutorizacion">
         <h4>Permission to Play</h4>
         <p>
             I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation
@@ -222,17 +223,17 @@
             By signing below, I herebyagree and authorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
         </p>
         <div class="input-group mb-3 InputFirma">
-            <span class="input-group-text" id="inputGroup-sizing-default">Parent/GuardianSignature</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="Padre-Tutor">Parent/GuardianSignature</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="Padre-Tutor">
         </div>
         <div class="input-group mb-3 InputFirma">
-            <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
-            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="Date-Fecha">Date</span>
+            <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="Date-Fecha">
         </div>
         
     </div>
     </section>
-    <div class="EnvioFormulario">
+    <div>
         <input class="btn btn-primary" type="submit" value="Submit">
         <input class="btn btn-primary" type="reset" value="Reset"> 
     </div>
