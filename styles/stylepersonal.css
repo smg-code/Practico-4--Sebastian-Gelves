@@ -276,8 +276,16 @@ ul  li {
 .email {
     text-align: right;
 }
+.Mapa-style {
+    padding: 2%;
+    margin: 2%;
+}
+/*cuando Mapa-style (con target = objetivo) sea seleccionado con un click, se colocara el fondo verde*/
+.Mapa-style:target {
+    background-color: #14d364;
+}
 /***********************************/
-/***********************************/
+/******    index   *****************/
 /***********************************/
     /*estilo del encabezado*/
     /* en este caso dentro del contenedor van
@@ -285,85 +293,88 @@ ul  li {
     1 - titulo principal / con banner con fotos
     2 - navegacion
     */
-    header {
-    /* background-color: pink; */
-        margin: 0px auto;
+
+/******    Header  *****************/
+
+header {
+/* background-color: pink; */
+    margin: 0px auto;
+    width: 99%;
+    /* height: 20%;/*
+    /* position: sticky; deja posicionado el header en la cabexera de la paguina*/
+     top: 10px;
+}
+/*La propiedad CSS float ubica un elemento al lado izquierdo
+o derecho de su contenedor, permitiendo a los elementos de 
+texto y en línea aparecer a su costado. El elemento es removido
+del normal flujo de la página, aunque aún sigue siendo parte 
+del flujo (a diferencia del posicionamiento absoluto).*/
+/*uso la propiedad float para que se coloquen uno al lado del otro*/
+    .Titulo {
+     /* background-color: blue;*/
+        text-shadow: 1px 1px 2px yellow; /*sombra en la letra del banner*/
+        color: rgb(0, 3, 3);
         width: 99%;
-       /* height: 20%;/*
-       /* position: sticky; deja posicionado el header en la cabexera de la paguina*/
-        top: 10px;
+        height: 20%;
+        float: left;
+        font-size: 43px;/*tamaño de letra dentro de Titulo*/
+        position: absolute; /*coloca el titulo sobre los otros contenedores, y se mueve
+        independiente de las imagenes*/
     }
-        .imagen1 {
-            display: none;
-        }
-        .imgbaner1 {
-            background-size: contain;
-            background-image: url(../images/hockey1.jpg); /*agregar los .. */
-            width: 33%;
-            height: 150px;
-            float: left;   
-        }
-        .imgbaner2 {
-            width: 33%;
-            height: 150px;
-            background-size: contain;
-            background-image: url(../images/hockey2.jpg);
-            float: left;
-        }
-        .imgbaner3 {
-            width: 33%;
-            height: 150px;
-            background-size: contain;
-            background-image: url(../images/hockey3.jpg);
-            float: left;
-        }
-        /* formato las cajas "a" que estan dentro del nav"*/
-        header a {
-            color: rgb(201, 235, 11); /*color del texto */
-            text-decoration: none; /*saco el subrayado*/
-            background-color: rgb(67, 113, 237);
-            border: 1px solid black;
-            margin: 3px;
-            padding: 3px;
-            position: relative; /*se mueve esta relativa de las paredes de nav*/
-            bottom: 10px;
-            left: 50px;
-            box-shadow: 10px 5px 5px black; /* sombra en la cajas de "a" en el nav*/
-        }
-        /*cambia de color el boton cuando pasa el mouse*/ 
-        header a:hover {
-            background-color: rgb(32, 224, 238);
-        }
-        .activo {
-            background-color: rgb(86, 194, 103);
-        }
-        .activo:hover { 
+    .imgbaner1 {
+        background-size: contain;
+        background-image: url(../images/hockey1.jpg); /*agregar los .. */
+        width: 33%;
+        height: 150px;
+        float: left;   
+    }
+    .imgbaner2 {
+        width: 33%;
+        height: 150px;
+        background-size: contain;
+        background-image: url(../images/hockey2.jpg);
+        float: left;
+    }
+    .imgbaner3 {
+        width: 33%;
+        height: 150px;
+        background-size: contain;
+        background-image: url(../images/hockey3.jpg);
+        float: left;
+    }
+    /* formato las cajas "a" que estan dentro del nav"*/
+    header a {
+        color: rgb(201, 235, 11); /*color del texto */
+        text-decoration: none; /*saco el subrayado*/
+        background-color: rgb(67, 113, 237);
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+        position: relative; /*se mueve esta relativa de las paredes de nav*/
+        bottom: 10px;
+        left: 50px;
+        box-shadow: 10px 5px 5px black; /* sombra en la cajas de "a" en el nav*/
+    }
+    /*cambia de color el boton cuando pasa el mouse*/ 
+    header a:hover {
+        background-color: rgb(32, 224, 238);
+    }
+    /*pone de otro color al nav donde se encuentra*/
+    .activo {
+        background-color: rgb(86, 194, 103);
+    }
+    /*cambia de color el nav cuando el mouse pasa sobre el*/
+    .activo:hover { 
             background-color: #14d364;
-        }
-        /*La propiedad CSS float ubica un elemento al lado izquierdo
-        o derecho de su contenedor, permitiendo a los elementos de 
-        texto y en línea aparecer a su costado. El elemento es removido
-        del normal flujo de la página, aunque aún sigue siendo parte 
-        del flujo (a diferencia del posicionamiento absoluto).*/
-        /*uso la propiedad float para que se coloquen uno al lado del otro*/
-        .Titulo {
-            /* background-color: blue;*/
-            text-shadow: 1px 1px 2px yellow; /*sombra en la letra del banner*/
-            color: rgb(0, 3, 3);
-            width: 99%;
-            height: 20%;
-            float: left;
-            font-size: 43px;/*tamaño de letra dentro de Titulo*/
-            position: absolute;
-            /*top: 40px;
-            left: 150px;*/
-        }
-        nav {
-            /* background-color: rgb(184, 212, 42);*/
-            width: 99%;
-            height: 50px;
-            float: left;
-        }
+    }   
+    nav {
+        /* background-color: rgb(184, 212, 42);*/
+        width: 99%;
+        height: 50px;
+        float: left;
+    }
+/***************body pag index *************/    
     /* formato titulo 2*/    
     .Titulo2 {
         color: rgb(219, 44, 44);
@@ -388,9 +399,6 @@ ul  li {
             height: 80%;
             float: left;
         }
-        .logo {
-            display: none;
-        }
         .logop {
             margin: 10px;
             width: 80px;
@@ -407,6 +415,7 @@ ul  li {
         .logop:hover {
             transform: scale(5); /* si paso el mouse sobre el loqo lo agrando*/
         }
+/******animacion logo*****/
         @keyframes caja{
             0%{
                 right:-50px;
@@ -427,20 +436,44 @@ ul  li {
             width: 80%;
             height: 25%;
             float: left;
+            margin-bottom: 1%;
         }
         .art2{
         /* background-color: rgb(58, 166, 234);*/
             width: 80%;
             height: 25%;
             float: left;
+            margin-bottom: 1%;
         }
         .art3 {
             /*background-color: rgb(18, 139, 183);*/
             width: 80%;
             height: 25%;
             float: left;
+            margin-bottom: 1%;
         }
             /* le doy sangria al texto*/
             .texto {
                         text-indent: 1em; 
                     }
+/**reponsive pagina index **/
+@media (max-width: 400px) {
+    h1 {
+        display: none;
+    }
+    nav {
+        position: absolute;
+        padding-top: 3%;
+    }
+}
+@media (max-width: 660px) {
+    .logo1 {
+        display: none; /*para pantallas pequeñas desaparesxo el logo*/
+    }
+    section {
+       margin: 5px;
+    }
+    .art1,.art2,.art3 {
+        width: 100%;
+        } 
+}
